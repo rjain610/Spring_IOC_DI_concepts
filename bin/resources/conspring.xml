@@ -1,0 +1,16 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+ <beans>
+ <bean id="E" class="com.rahul.springclass.Engine">
+		<constructor-arg value ="Audi" type="String"></constructor-arg>
+	</bean>
+	<bean id="C" class="com.rahul.springclass.Car">
+		<constructor-arg ref= "E"></constructor-arg>
+	</bean>
+	
+
+</beans> 
+
+
